@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunter Api</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+  <main>
+    <!-- search box -->
+    <section class="mt-5">
+      <h2 class="text-2xl font-bold text-center">Search your phone</h2>
+      <div class="flex justify-center items-center">
+
+        <input type="text" placeholder="Search your phone" name="" id="search-box"
+          class="bg-gray-100 p-3 rounded w-1/2 md:w-1/3 my-3">
+        <button class="btn btn-accent text-white" id="search-btn">Search</button>
+      </div>
+    </section>
+    <!-- search result(phones) -->
+    <section>
+      <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto container mt-10">
+        <!-- will append dynamic element -->
+      </div>
+      <div class="flex justify-center items-center my-4 hidden" id="show-btn-container">
+        <button class="btn btn-accent text-white" id="search-btn" id="show-btn">Show All</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/hunter.js"></script>
+</body>
+
+</html>
